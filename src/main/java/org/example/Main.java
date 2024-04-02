@@ -15,7 +15,7 @@ public class Main {
         productList.add(new BottleOfWater(200, "termal", 2));
         productList.add(new BottleOfWater(150, "Aeon", 1));
         productList.add(new HotDriknk(750, "Morgan", 1, 30 ));
-        productList.add(new HotDriknk(250, "cappucino", 0.33, 65 ));
+        productList.add(new HotDriknk(250, "cappuccino", 0.33, 65 ));
         WaterVendingMachine vendingMachine = new WaterVendingMachine();
         vendingMachine.initProduct(productList);
         HotDrinkMachine hotVendingMachine = new HotDrinkMachine();
@@ -24,6 +24,6 @@ public class Main {
         System.out.println(vendingMachine.getProduct("Baikalskaya", 2));
         System.out.println(vendingMachine.getProduct("Baikalskaya"));
         System.out.println(hotVendingMachine.getProduct("Morgan"));
-        System.out.println(hotVendingMachine.getProduct("cappucino", 0.33, 65));
+        System.out.println(hotVendingMachine.getProduct("cappuccino", 0.33, 65));
     }
 }
